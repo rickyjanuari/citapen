@@ -17,6 +17,8 @@ declare module "@remix-run/cloudflare" {
   }
 }
 
-export function getLoadContext({ context }: GetLoadContextArgs) {
-  return context;
+export function getLoadContext({ request, context }) {
+  return {
+    cloudflare: context.cloudflare,
+  };
 }

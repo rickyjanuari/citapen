@@ -8,12 +8,11 @@ import {
   ScrollRestoration,
   useMatches,
 } from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
-
-import tailwindStyles from "./tailwind.css";
+import type { LinksFunction } from "@remix-run/cloudflare";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import tailwindStyles from "./tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: tailwindStyles },

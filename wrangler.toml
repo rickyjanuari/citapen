@@ -1,0 +1,9 @@
+name = "citapen" 
+main = "server.ts"
+compatibility_date = "2025-04-01"
+
+[site]
+bucket = "./build/client"
+
+[build]
+command = "npm run build"
