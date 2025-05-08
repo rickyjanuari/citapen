@@ -12,10 +12,12 @@ import type { LinksFunction } from "@remix-run/cloudflare";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
-import tailwindStyles from "./tailwind.css";
+
+// Impor CSS dengan gaya Vite (impor langsung, tidak sebagai default export)
+import "./styles/tailwind.css";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: tailwindStyles },
+  // Hapus referensi tailwindStyles karena sudah diimpor langsung
   { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" },
   { rel: "icon", href: "/favicon.ico" },
 ];
