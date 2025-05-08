@@ -2,11 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+  
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl font-bold;
+  }
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+@layer components {
+  .btn {
+    @apply px-6 py-3 font-bold rounded-md transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-dark;
+  }
+  
+  .btn-whatsapp {
+    @apply bg-[#25D366] text-white hover:bg-[#128C7E] flex items-center justify-center;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .container {
+    @apply max-w-7xl mx-auto px-4;
   }
 }

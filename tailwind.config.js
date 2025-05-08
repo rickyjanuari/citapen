@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {
@@ -21,7 +21,7 @@ module.exports = {
         sans: ['Inter', 'sans-serif'],
         heading: ['Montserrat', 'sans-serif']
       }
-    },
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};
