@@ -25,7 +25,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250404.0",
+    "@cloudflare/workers-types": "^4.20250507.0",
     "@remix-run/dev": "2.16.5",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
@@ -59,9 +59,7 @@
     "preview": "npm run build && wrangler dev",
     "start": "wrangler dev",
     "typecheck": "tsc",
-    "typegen": "wrangler types",
-    "static": "remix build && npm run generate",
-    "generate": "remix build && remix-serve ./build"
+    "typegen": "wrangler types"
   },
   "sideEffects": false,
   "type": "module",
