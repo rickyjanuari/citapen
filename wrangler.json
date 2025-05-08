@@ -1,12 +1,12 @@
 {
   "name": "citapen",
+  "account_id": "<seu_account_id>",
+  "route": "",
+  "workers_dev": true,
   "compatibility_date": "2025-04-01",
-  "main": "./server.ts",
-  "assets": {
-    "directory": "./build/client"
-  },
-  "observability": {
-    "enabled": true
-  },
-  "upload_source_maps": true
+  "pages_build_output_dir": "build/client",
+  "main": "server.ts",
+  "site": {
+    "bucket": "build/client"
+  }
 }

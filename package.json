@@ -53,7 +53,7 @@
     "build": "remix vite:build",
     "cf-typegen": "wrangler types",
     "check": "tsc && remix vite:build && wrangler deploy --dry-run",
-    "deploy": "wrangler pages deploy build/client",
+    "deploy": "wrangler pages deploy build/client --project-name=citapen",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "preview": "npm run build && wrangler dev",
