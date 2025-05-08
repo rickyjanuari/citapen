@@ -38,10 +38,5 @@ export default defineConfig({
   },
   build: {
     minify: true,
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
-    },
   },
 });
